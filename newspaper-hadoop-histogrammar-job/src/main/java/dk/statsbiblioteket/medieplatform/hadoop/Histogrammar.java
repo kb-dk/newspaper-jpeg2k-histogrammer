@@ -55,7 +55,6 @@ public class Histogrammar {
                 }
             }
             header.write(value);
-            System.out.print(Character.toChars(value));
         }
         return header.toByteArray();
 

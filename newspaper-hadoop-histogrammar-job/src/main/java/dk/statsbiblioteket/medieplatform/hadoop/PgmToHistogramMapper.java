@@ -86,7 +86,7 @@ public class PgmToHistogramMapper extends Mapper<LongWritable, Text, Text, Text>
             Marshaller marshaller = context.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FRAGMENT, Boolean.TRUE);
             StringWriter writer = new StringWriter();
-            marshaller.marshal(histogram, writer);
+            marshaller.marshal(factory.createHistogram(histogram), writer);
             return writer.toString();
         } catch (JAXBException e) {
             return null;
