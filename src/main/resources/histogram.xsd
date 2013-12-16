@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="histogram" type="histogramType"/>
-  <xs:complexType name="colorSchemeType">
-    <xs:sequence>
-      <xs:element type="xs:string" name="colorSpace"/>
-      <xs:element type="xs:string" name="colorDepth"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="colorType">
-    <xs:sequence>
-      <xs:element type="xs:int" name="code"/>
-      <xs:element type="xs:int" name="count"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="colorsType">
-    <xs:sequence>
-      <xs:element type="colorType" name="color" maxOccurs="unbounded" minOccurs="0"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="histogramType">
-    <xs:sequence>
-      <xs:element type="colorSchemeType" name="colorScheme"/>
-      <xs:element type="colorsType" name="colors"/>
-    </xs:sequence>
-  </xs:complexType>
+<xs:schema attributeFormDefault="unqualified"
+           elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.statsbiblioteket.dk/avisdigitalisering/histogram/1/0/"
+           xmlns:tns="http://www.statsbiblioteket.dk/avisdigitalisering/histogram/1/0/">
+    <xs:element name="histogram" type="tns:histogramType"/>
+    <xs:complexType name="colorSchemeType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="colorSpace"/>
+            <xs:element type="xs:string" name="colorDepth"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="colorType">
+        <xs:sequence>
+            <xs:element type="xs:int" name="code"/>
+            <xs:element type="xs:int" name="count"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="colorsType">
+        <xs:sequence>
+            <xs:element type="tns:colorType" name="color" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="histogramType">
+        <xs:sequence>
+            <xs:element type="tns:colorSchemeType" name="colorScheme"/>
+            <xs:element type="tns:colorsType" name="colors"/>
+        </xs:sequence>
+    </xs:complexType>
 </xs:schema>
