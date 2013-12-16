@@ -1,1036 +1,1035 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<histogram> <!--Namespace-->
-  <colourScheme>
-    <colourSpace> <!--rgb GRAYSCALE-->
+<histogram>
+  <colorScheme>
+    <colorSpace>
       Grayscale
-    </colourSpace>
-    <colourDepth><!--integer?-->
+    </colorSpace>
+    <colorDepth>
       8 bits
-    </colourDepth>
+    </colorDepth>
+  </colorScheme>
 
-  </colourScheme>
-
-  <colourData><!--colours?-->
-    <colour>
-      <ID>0</ID>
+  <colors>
+    <color>
+      <code>0</code>
       <count>3324</count>
-    </colour>
-    <colour>
-      <ID>1</ID>
+    </color>
+    <color>
+      <code>1</code>
       <count>7691</count>
-    </colour>
-    <colour>
-      <ID>2</ID>
+    </color>
+    <color>
+      <code>2</code>
       <count>104168</count>
-    </colour>
-    <colour>
-      <ID>3</ID>
+    </color>
+    <color>
+      <code>3</code>
       <count>10522</count>
-    </colour>
-    <colour>
-      <ID>4</ID>
+    </color>
+    <color>
+      <code>4</code>
       <count>9585</count>
-    </colour>
-    <colour>
-      <ID>5</ID>
+    </color>
+    <color>
+      <code>5</code>
       <count>8549</count>
-    </colour>
-    <colour>
-      <ID>6</ID>
+    </color>
+    <color>
+      <code>6</code>
       <count>8673</count>
-    </colour>
-    <colour>
-      <ID>7</ID>
+    </color>
+    <color>
+      <code>7</code>
       <count>8928</count>
-    </colour>
-    <colour>
-      <ID>8</ID>
+    </color>
+    <color>
+      <code>8</code>
       <count>9819</count>
-    </colour>
-    <colour>
-      <ID>9</ID>
+    </color>
+    <color>
+      <code>9</code>
       <count>10865</count>
-    </colour>
-    <colour>
-      <ID>10</ID>
+    </color>
+    <color>
+      <code>10</code>
       <count>11960</count>
-    </colour>
-    <colour>
-      <ID>11</ID>
+    </color>
+    <color>
+      <code>11</code>
       <count>13803</count>
-    </colour>
-    <colour>
-      <ID>12</ID>
+    </color>
+    <color>
+      <code>12</code>
       <count>15455</count>
-    </colour>
-    <colour>
-      <ID>13</ID>
+    </color>
+    <color>
+      <code>13</code>
       <count>17832</count>
-    </colour>
-    <colour>
-      <ID>14</ID>
+    </color>
+    <color>
+      <code>14</code>
       <count>19815</count>
-    </colour>
-    <colour>
-      <ID>15</ID>
+    </color>
+    <color>
+      <code>15</code>
       <count>22290</count>
-    </colour>
-    <colour>
-      <ID>16</ID>
+    </color>
+    <color>
+      <code>16</code>
       <count>24973</count>
-    </colour>
-    <colour>
-      <ID>17</ID>
+    </color>
+    <color>
+      <code>17</code>
       <count>27915</count>
-    </colour>
-    <colour>
-      <ID>18</ID>
+    </color>
+    <color>
+      <code>18</code>
       <count>31033</count>
-    </colour>
-    <colour>
-      <ID>19</ID>
+    </color>
+    <color>
+      <code>19</code>
       <count>33681</count>
-    </colour>
-    <colour>
-      <ID>20</ID>
+    </color>
+    <color>
+      <code>20</code>
       <count>36459</count>
-    </colour>
-    <colour>
-      <ID>21</ID>
+    </color>
+    <color>
+      <code>21</code>
       <count>39032</count>
-    </colour>
-    <colour>
-      <ID>22</ID>
+    </color>
+    <color>
+      <code>22</code>
       <count>41431</count>
-    </colour>
-    <colour>
-      <ID>23</ID>
+    </color>
+    <color>
+      <code>23</code>
       <count>43008</count>
-    </colour>
-    <colour>
-      <ID>24</ID>
+    </color>
+    <color>
+      <code>24</code>
       <count>44855</count>
-    </colour>
-    <colour>
-      <ID>25</ID>
+    </color>
+    <color>
+      <code>25</code>
       <count>45694</count>
-    </colour>
-    <colour>
-      <ID>26</ID>
+    </color>
+    <color>
+      <code>26</code>
       <count>46886</count>
-    </colour>
-    <colour>
-      <ID>27</ID>
+    </color>
+    <color>
+      <code>27</code>
       <count>47675</count>
-    </colour>
-    <colour>
-      <ID>28</ID>
+    </color>
+    <color>
+      <code>28</code>
       <count>48464</count>
-    </colour>
-    <colour>
-      <ID>29</ID>
+    </color>
+    <color>
+      <code>29</code>
       <count>49443</count>
-    </colour>
-    <colour>
-      <ID>30</ID>
+    </color>
+    <color>
+      <code>30</code>
       <count>49759</count>
-    </colour>
-    <colour>
-      <ID>31</ID>
+    </color>
+    <color>
+      <code>31</code>
       <count>49715</count>
-    </colour>
-    <colour>
-      <ID>32</ID>
+    </color>
+    <color>
+      <code>32</code>
       <count>49910</count>
-    </colour>
-    <colour>
-      <ID>33</ID>
+    </color>
+    <color>
+      <code>33</code>
       <count>49754</count>
-    </colour>
-    <colour>
-      <ID>34</ID>
+    </color>
+    <color>
+      <code>34</code>
       <count>49347</count>
-    </colour>
-    <colour>
-      <ID>35</ID>
+    </color>
+    <color>
+      <code>35</code>
       <count>48628</count>
-    </colour>
-    <colour>
-      <ID>36</ID>
+    </color>
+    <color>
+      <code>36</code>
       <count>48669</count>
-    </colour>
-    <colour>
-      <ID>37</ID>
+    </color>
+    <color>
+      <code>37</code>
       <count>48172</count>
-    </colour>
-    <colour>
-      <ID>38</ID>
+    </color>
+    <color>
+      <code>38</code>
       <count>47580</count>
-    </colour>
-    <colour>
-      <ID>39</ID>
+    </color>
+    <color>
+      <code>39</code>
       <count>46532</count>
-    </colour>
-    <colour>
-      <ID>40</ID>
+    </color>
+    <color>
+      <code>40</code>
       <count>46066</count>
-    </colour>
-    <colour>
-      <ID>41</ID>
+    </color>
+    <color>
+      <code>41</code>
       <count>45204</count>
-    </colour>
-    <colour>
-      <ID>42</ID>
+    </color>
+    <color>
+      <code>42</code>
       <count>44642</count>
-    </colour>
-    <colour>
-      <ID>43</ID>
+    </color>
+    <color>
+      <code>43</code>
       <count>43623</count>
-    </colour>
-    <colour>
-      <ID>44</ID>
+    </color>
+    <color>
+      <code>44</code>
       <count>42737</count>
-    </colour>
-    <colour>
-      <ID>45</ID>
+    </color>
+    <color>
+      <code>45</code>
       <count>41980</count>
-    </colour>
-    <colour>
-      <ID>46</ID>
+    </color>
+    <color>
+      <code>46</code>
       <count>42120</count>
-    </colour>
-    <colour>
-      <ID>47</ID>
+    </color>
+    <color>
+      <code>47</code>
       <count>41795</count>
-    </colour>
-    <colour>
-      <ID>48</ID>
+    </color>
+    <color>
+      <code>48</code>
       <count>41657</count>
-    </colour>
-    <colour>
-      <ID>49</ID>
+    </color>
+    <color>
+      <code>49</code>
       <count>41167</count>
-    </colour>
-    <colour>
-      <ID>50</ID>
+    </color>
+    <color>
+      <code>50</code>
       <count>40971</count>
-    </colour>
-    <colour>
-      <ID>51</ID>
+    </color>
+    <color>
+      <code>51</code>
       <count>41152</count>
-    </colour>
-    <colour>
-      <ID>52</ID>
+    </color>
+    <color>
+      <code>52</code>
       <count>41310</count>
-    </colour>
-    <colour>
-      <ID>53</ID>
+    </color>
+    <color>
+      <code>53</code>
       <count>41171</count>
-    </colour>
-    <colour>
-      <ID>54</ID>
+    </color>
+    <color>
+      <code>54</code>
       <count>41510</count>
-    </colour>
-    <colour>
-      <ID>55</ID>
+    </color>
+    <color>
+      <code>55</code>
       <count>41982</count>
-    </colour>
-    <colour>
-      <ID>56</ID>
+    </color>
+    <color>
+      <code>56</code>
       <count>41833</count>
-    </colour>
-    <colour>
-      <ID>57</ID>
+    </color>
+    <color>
+      <code>57</code>
       <count>42209</count>
-    </colour>
-    <colour>
-      <ID>58</ID>
+    </color>
+    <color>
+      <code>58</code>
       <count>42276</count>
-    </colour>
-    <colour>
-      <ID>59</ID>
+    </color>
+    <color>
+      <code>59</code>
       <count>43097</count>
-    </colour>
-    <colour>
-      <ID>60</ID>
+    </color>
+    <color>
+      <code>60</code>
       <count>43062</count>
-    </colour>
-    <colour>
-      <ID>61</ID>
+    </color>
+    <color>
+      <code>61</code>
       <count>43815</count>
-    </colour>
-    <colour>
-      <ID>62</ID>
+    </color>
+    <color>
+      <code>62</code>
       <count>44376</count>
-    </colour>
-    <colour>
-      <ID>63</ID>
+    </color>
+    <color>
+      <code>63</code>
       <count>44749</count>
-    </colour>
-    <colour>
-      <ID>64</ID>
+    </color>
+    <color>
+      <code>64</code>
       <count>45244</count>
-    </colour>
-    <colour>
-      <ID>65</ID>
+    </color>
+    <color>
+      <code>65</code>
       <count>45665</count>
-    </colour>
-    <colour>
-      <ID>66</ID>
+    </color>
+    <color>
+      <code>66</code>
       <count>46285</count>
-    </colour>
-    <colour>
-      <ID>67</ID>
+    </color>
+    <color>
+      <code>67</code>
       <count>46920</count>
-    </colour>
-    <colour>
-      <ID>68</ID>
+    </color>
+    <color>
+      <code>68</code>
       <count>47047</count>
-    </colour>
-    <colour>
-      <ID>69</ID>
+    </color>
+    <color>
+      <code>69</code>
       <count>47343</count>
-    </colour>
-    <colour>
-      <ID>70</ID>
+    </color>
+    <color>
+      <code>70</code>
       <count>48329</count>
-    </colour>
-    <colour>
-      <ID>71</ID>
+    </color>
+    <color>
+      <code>71</code>
       <count>48944</count>
-    </colour>
-    <colour>
-      <ID>72</ID>
+    </color>
+    <color>
+      <code>72</code>
       <count>49069</count>
-    </colour>
-    <colour>
-      <ID>73</ID>
+    </color>
+    <color>
+      <code>73</code>
       <count>49912</count>
-    </colour>
-    <colour>
-      <ID>74</ID>
+    </color>
+    <color>
+      <code>74</code>
       <count>50650</count>
-    </colour>
-    <colour>
-      <ID>75</ID>
+    </color>
+    <color>
+      <code>75</code>
       <count>51238</count>
-    </colour>
-    <colour>
-      <ID>76</ID>
+    </color>
+    <color>
+      <code>76</code>
       <count>51214</count>
-    </colour>
-    <colour>
-      <ID>77</ID>
+    </color>
+    <color>
+      <code>77</code>
       <count>52021</count>
-    </colour>
-    <colour>
-      <ID>78</ID>
+    </color>
+    <color>
+      <code>78</code>
       <count>52368</count>
-    </colour>
-    <colour>
-      <ID>79</ID>
+    </color>
+    <color>
+      <code>79</code>
       <count>52292</count>
-    </colour>
-    <colour>
-      <ID>80</ID>
+    </color>
+    <color>
+      <code>80</code>
       <count>52780</count>
-    </colour>
-    <colour>
-      <ID>81</ID>
+    </color>
+    <color>
+      <code>81</code>
       <count>53567</count>
-    </colour>
-    <colour>
-      <ID>82</ID>
+    </color>
+    <color>
+      <code>82</code>
       <count>53616</count>
-    </colour>
-    <colour>
-      <ID>83</ID>
+    </color>
+    <color>
+      <code>83</code>
       <count>54004</count>
-    </colour>
-    <colour>
-      <ID>84</ID>
+    </color>
+    <color>
+      <code>84</code>
       <count>54467</count>
-    </colour>
-    <colour>
-      <ID>85</ID>
+    </color>
+    <color>
+      <code>85</code>
       <count>54719</count>
-    </colour>
-    <colour>
-      <ID>86</ID>
+    </color>
+    <color>
+      <code>86</code>
       <count>54999</count>
-    </colour>
-    <colour>
-      <ID>87</ID>
+    </color>
+    <color>
+      <code>87</code>
       <count>55231</count>
-    </colour>
-    <colour>
-      <ID>88</ID>
+    </color>
+    <color>
+      <code>88</code>
       <count>55859</count>
-    </colour>
-    <colour>
-      <ID>89</ID>
+    </color>
+    <color>
+      <code>89</code>
       <count>56518</count>
-    </colour>
-    <colour>
-      <ID>90</ID>
+    </color>
+    <color>
+      <code>90</code>
       <count>56445</count>
-    </colour>
-    <colour>
-      <ID>91</ID>
+    </color>
+    <color>
+      <code>91</code>
       <count>56984</count>
-    </colour>
-    <colour>
-      <ID>92</ID>
+    </color>
+    <color>
+      <code>92</code>
       <count>57061</count>
-    </colour>
-    <colour>
-      <ID>93</ID>
+    </color>
+    <color>
+      <code>93</code>
       <count>57646</count>
-    </colour>
-    <colour>
-      <ID>94</ID>
+    </color>
+    <color>
+      <code>94</code>
       <count>57751</count>
-    </colour>
-    <colour>
-      <ID>95</ID>
+    </color>
+    <color>
+      <code>95</code>
       <count>57730</count>
-    </colour>
-    <colour>
-      <ID>96</ID>
+    </color>
+    <color>
+      <code>96</code>
       <count>58916</count>
-    </colour>
-    <colour>
-      <ID>97</ID>
+    </color>
+    <color>
+      <code>97</code>
       <count>59269</count>
-    </colour>
-    <colour>
-      <ID>98</ID>
+    </color>
+    <color>
+      <code>98</code>
       <count>59610</count>
-    </colour>
-    <colour>
-      <ID>99</ID>
+    </color>
+    <color>
+      <code>99</code>
       <count>59710</count>
-    </colour>
-    <colour>
-      <ID>100</ID>
+    </color>
+    <color>
+      <code>100</code>
       <count>60226</count>
-    </colour>
-    <colour>
-      <ID>101</ID>
+    </color>
+    <color>
+      <code>101</code>
       <count>60784</count>
-    </colour>
-    <colour>
-      <ID>102</ID>
+    </color>
+    <color>
+      <code>102</code>
       <count>61726</count>
-    </colour>
-    <colour>
-      <ID>103</ID>
+    </color>
+    <color>
+      <code>103</code>
       <count>62041</count>
-    </colour>
-    <colour>
-      <ID>104</ID>
+    </color>
+    <color>
+      <code>104</code>
       <count>62510</count>
-    </colour>
-    <colour>
-      <ID>105</ID>
+    </color>
+    <color>
+      <code>105</code>
       <count>62815</count>
-    </colour>
-    <colour>
-      <ID>106</ID>
+    </color>
+    <color>
+      <code>106</code>
       <count>63072</count>
-    </colour>
-    <colour>
-      <ID>107</ID>
+    </color>
+    <color>
+      <code>107</code>
       <count>63886</count>
-    </colour>
-    <colour>
-      <ID>108</ID>
+    </color>
+    <color>
+      <code>108</code>
       <count>64058</count>
-    </colour>
-    <colour>
-      <ID>109</ID>
+    </color>
+    <color>
+      <code>109</code>
       <count>64423</count>
-    </colour>
-    <colour>
-      <ID>110</ID>
+    </color>
+    <color>
+      <code>110</code>
       <count>64528</count>
-    </colour>
-    <colour>
-      <ID>111</ID>
+    </color>
+    <color>
+      <code>111</code>
       <count>64800</count>
-    </colour>
-    <colour>
-      <ID>112</ID>
+    </color>
+    <color>
+      <code>112</code>
       <count>64525</count>
-    </colour>
-    <colour>
-      <ID>113</ID>
+    </color>
+    <color>
+      <code>113</code>
       <count>64306</count>
-    </colour>
-    <colour>
-      <ID>114</ID>
+    </color>
+    <color>
+      <code>114</code>
       <count>64739</count>
-    </colour>
-    <colour>
-      <ID>115</ID>
+    </color>
+    <color>
+      <code>115</code>
       <count>64695</count>
-    </colour>
-    <colour>
-      <ID>116</ID>
+    </color>
+    <color>
+      <code>116</code>
       <count>63919</count>
-    </colour>
-    <colour>
-      <ID>117</ID>
+    </color>
+    <color>
+      <code>117</code>
       <count>64716</count>
-    </colour>
-    <colour>
-      <ID>118</ID>
+    </color>
+    <color>
+      <code>118</code>
       <count>64197</count>
-    </colour>
-    <colour>
-      <ID>119</ID>
+    </color>
+    <color>
+      <code>119</code>
       <count>63989</count>
-    </colour>
-    <colour>
-      <ID>120</ID>
+    </color>
+    <color>
+      <code>120</code>
       <count>63663</count>
-    </colour>
-    <colour>
-      <ID>121</ID>
+    </color>
+    <color>
+      <code>121</code>
       <count>63449</count>
-    </colour>
-    <colour>
-      <ID>122</ID>
+    </color>
+    <color>
+      <code>122</code>
       <count>63271</count>
-    </colour>
-    <colour>
-      <ID>123</ID>
+    </color>
+    <color>
+      <code>123</code>
       <count>63411</count>
-    </colour>
-    <colour>
-      <ID>124</ID>
+    </color>
+    <color>
+      <code>124</code>
       <count>62997</count>
-    </colour>
-    <colour>
-      <ID>125</ID>
+    </color>
+    <color>
+      <code>125</code>
       <count>62712</count>
-    </colour>
-    <colour>
-      <ID>126</ID>
+    </color>
+    <color>
+      <code>126</code>
       <count>62699</count>
-    </colour>
-    <colour>
-      <ID>127</ID>
+    </color>
+    <color>
+      <code>127</code>
       <count>62824</count>
-    </colour>
-    <colour>
-      <ID>128</ID>
+    </color>
+    <color>
+      <code>128</code>
       <count>62613</count>
-    </colour>
-    <colour>
-      <ID>129</ID>
+    </color>
+    <color>
+      <code>129</code>
       <count>61282</count>
-    </colour>
-    <colour>
-      <ID>130</ID>
+    </color>
+    <color>
+      <code>130</code>
       <count>61344</count>
-    </colour>
-    <colour>
-      <ID>131</ID>
+    </color>
+    <color>
+      <code>131</code>
       <count>60981</count>
-    </colour>
-    <colour>
-      <ID>132</ID>
+    </color>
+    <color>
+      <code>132</code>
       <count>61195</count>
-    </colour>
-    <colour>
-      <ID>133</ID>
+    </color>
+    <color>
+      <code>133</code>
       <count>60615</count>
-    </colour>
-    <colour>
-      <ID>134</ID>
+    </color>
+    <color>
+      <code>134</code>
       <count>61429</count>
-    </colour>
-    <colour>
-      <ID>135</ID>
+    </color>
+    <color>
+      <code>135</code>
       <count>60832</count>
-    </colour>
-    <colour>
-      <ID>136</ID>
+    </color>
+    <color>
+      <code>136</code>
       <count>60778</count>
-    </colour>
-    <colour>
-      <ID>137</ID>
+    </color>
+    <color>
+      <code>137</code>
       <count>59904</count>
-    </colour>
-    <colour>
-      <ID>138</ID>
+    </color>
+    <color>
+      <code>138</code>
       <count>59984</count>
-    </colour>
-    <colour>
-      <ID>139</ID>
+    </color>
+    <color>
+      <code>139</code>
       <count>59840</count>
-    </colour>
-    <colour>
-      <ID>140</ID>
+    </color>
+    <color>
+      <code>140</code>
       <count>59655</count>
-    </colour>
-    <colour>
-      <ID>141</ID>
+    </color>
+    <color>
+      <code>141</code>
       <count>59863</count>
-    </colour>
-    <colour>
-      <ID>142</ID>
+    </color>
+    <color>
+      <code>142</code>
       <count>58847</count>
-    </colour>
-    <colour>
-      <ID>143</ID>
+    </color>
+    <color>
+      <code>143</code>
       <count>58760</count>
-    </colour>
-    <colour>
-      <ID>144</ID>
+    </color>
+    <color>
+      <code>144</code>
       <count>58743</count>
-    </colour>
-    <colour>
-      <ID>145</ID>
+    </color>
+    <color>
+      <code>145</code>
       <count>58827</count>
-    </colour>
-    <colour>
-      <ID>146</ID>
+    </color>
+    <color>
+      <code>146</code>
       <count>58020</count>
-    </colour>
-    <colour>
-      <ID>147</ID>
+    </color>
+    <color>
+      <code>147</code>
       <count>58066</count>
-    </colour>
-    <colour>
-      <ID>148</ID>
+    </color>
+    <color>
+      <code>148</code>
       <count>58141</count>
-    </colour>
-    <colour>
-      <ID>149</ID>
+    </color>
+    <color>
+      <code>149</code>
       <count>58272</count>
-    </colour>
-    <colour>
-      <ID>150</ID>
+    </color>
+    <color>
+      <code>150</code>
       <count>57511</count>
-    </colour>
-    <colour>
-      <ID>151</ID>
+    </color>
+    <color>
+      <code>151</code>
       <count>57129</count>
-    </colour>
-    <colour>
-      <ID>152</ID>
+    </color>
+    <color>
+      <code>152</code>
       <count>57397</count>
-    </colour>
-    <colour>
-      <ID>153</ID>
+    </color>
+    <color>
+      <code>153</code>
       <count>57079</count>
-    </colour>
-    <colour>
-      <ID>154</ID>
+    </color>
+    <color>
+      <code>154</code>
       <count>56957</count>
-    </colour>
-    <colour>
-      <ID>155</ID>
+    </color>
+    <color>
+      <code>155</code>
       <count>56290</count>
-    </colour>
-    <colour>
-      <ID>156</ID>
+    </color>
+    <color>
+      <code>156</code>
       <count>56706</count>
-    </colour>
-    <colour>
-      <ID>157</ID>
+    </color>
+    <color>
+      <code>157</code>
       <count>56575</count>
-    </colour>
-    <colour>
-      <ID>158</ID>
+    </color>
+    <color>
+      <code>158</code>
       <count>56321</count>
-    </colour>
-    <colour>
-      <ID>159</ID>
+    </color>
+    <color>
+      <code>159</code>
       <count>56583</count>
-    </colour>
-    <colour>
-      <ID>160</ID>
+    </color>
+    <color>
+      <code>160</code>
       <count>56305</count>
-    </colour>
-    <colour>
-      <ID>161</ID>
+    </color>
+    <color>
+      <code>161</code>
       <count>56039</count>
-    </colour>
-    <colour>
-      <ID>162</ID>
+    </color>
+    <color>
+      <code>162</code>
       <count>55965</count>
-    </colour>
-    <colour>
-      <ID>163</ID>
+    </color>
+    <color>
+      <code>163</code>
       <count>55628</count>
-    </colour>
-    <colour>
-      <ID>164</ID>
+    </color>
+    <color>
+      <code>164</code>
       <count>55496</count>
-    </colour>
-    <colour>
-      <ID>165</ID>
+    </color>
+    <color>
+      <code>165</code>
       <count>55660</count>
-    </colour>
-    <colour>
-      <ID>166</ID>
+    </color>
+    <color>
+      <code>166</code>
       <count>55095</count>
-    </colour>
-    <colour>
-      <ID>167</ID>
+    </color>
+    <color>
+      <code>167</code>
       <count>54421</count>
-    </colour>
-    <colour>
-      <ID>168</ID>
+    </color>
+    <color>
+      <code>168</code>
       <count>54078</count>
-    </colour>
-    <colour>
-      <ID>169</ID>
+    </color>
+    <color>
+      <code>169</code>
       <count>53057</count>
-    </colour>
-    <colour>
-      <ID>170</ID>
+    </color>
+    <color>
+      <code>170</code>
       <count>53016</count>
-    </colour>
-    <colour>
-      <ID>171</ID>
+    </color>
+    <color>
+      <code>171</code>
       <count>52734</count>
-    </colour>
-    <colour>
-      <ID>172</ID>
+    </color>
+    <color>
+      <code>172</code>
       <count>52309</count>
-    </colour>
-    <colour>
-      <ID>173</ID>
+    </color>
+    <color>
+      <code>173</code>
       <count>52098</count>
-    </colour>
-    <colour>
-      <ID>174</ID>
+    </color>
+    <color>
+      <code>174</code>
       <count>51606</count>
-    </colour>
-    <colour>
-      <ID>175</ID>
+    </color>
+    <color>
+      <code>175</code>
       <count>51390</count>
-    </colour>
-    <colour>
-      <ID>176</ID>
+    </color>
+    <color>
+      <code>176</code>
       <count>50829</count>
-    </colour>
-    <colour>
-      <ID>177</ID>
+    </color>
+    <color>
+      <code>177</code>
       <count>50182</count>
-    </colour>
-    <colour>
-      <ID>178</ID>
+    </color>
+    <color>
+      <code>178</code>
       <count>49864</count>
-    </colour>
-    <colour>
-      <ID>179</ID>
+    </color>
+    <color>
+      <code>179</code>
       <count>49682</count>
-    </colour>
-    <colour>
-      <ID>180</ID>
+    </color>
+    <color>
+      <code>180</code>
       <count>49622</count>
-    </colour>
-    <colour>
-      <ID>181</ID>
+    </color>
+    <color>
+      <code>181</code>
       <count>48952</count>
-    </colour>
-    <colour>
-      <ID>182</ID>
+    </color>
+    <color>
+      <code>182</code>
       <count>49050</count>
-    </colour>
-    <colour>
-      <ID>183</ID>
+    </color>
+    <color>
+      <code>183</code>
       <count>48307</count>
-    </colour>
-    <colour>
-      <ID>184</ID>
+    </color>
+    <color>
+      <code>184</code>
       <count>48929</count>
-    </colour>
-    <colour>
-      <ID>185</ID>
+    </color>
+    <color>
+      <code>185</code>
       <count>48931</count>
-    </colour>
-    <colour>
-      <ID>186</ID>
+    </color>
+    <color>
+      <code>186</code>
       <count>48639</count>
-    </colour>
-    <colour>
-      <ID>187</ID>
+    </color>
+    <color>
+      <code>187</code>
       <count>48902</count>
-    </colour>
-    <colour>
-      <ID>188</ID>
+    </color>
+    <color>
+      <code>188</code>
       <count>49290</count>
-    </colour>
-    <colour>
-      <ID>189</ID>
+    </color>
+    <color>
+      <code>189</code>
       <count>49522</count>
-    </colour>
-    <colour>
-      <ID>190</ID>
+    </color>
+    <color>
+      <code>190</code>
       <count>49814</count>
-    </colour>
-    <colour>
-      <ID>191</ID>
+    </color>
+    <color>
+      <code>191</code>
       <count>50427</count>
-    </colour>
-    <colour>
-      <ID>192</ID>
+    </color>
+    <color>
+      <code>192</code>
       <count>50920</count>
-    </colour>
-    <colour>
-      <ID>193</ID>
+    </color>
+    <color>
+      <code>193</code>
       <count>51140</count>
-    </colour>
-    <colour>
-      <ID>194</ID>
+    </color>
+    <color>
+      <code>194</code>
       <count>52395</count>
-    </colour>
-    <colour>
-      <ID>195</ID>
+    </color>
+    <color>
+      <code>195</code>
       <count>52708</count>
-    </colour>
-    <colour>
-      <ID>196</ID>
+    </color>
+    <color>
+      <code>196</code>
       <count>53557</count>
-    </colour>
-    <colour>
-      <ID>197</ID>
+    </color>
+    <color>
+      <code>197</code>
       <count>54624</count>
-    </colour>
-    <colour>
-      <ID>198</ID>
+    </color>
+    <color>
+      <code>198</code>
       <count>55726</count>
-    </colour>
-    <colour>
-      <ID>199</ID>
+    </color>
+    <color>
+      <code>199</code>
       <count>57259</count>
-    </colour>
-    <colour>
-      <ID>200</ID>
+    </color>
+    <color>
+      <code>200</code>
       <count>58719</count>
-    </colour>
-    <colour>
-      <ID>201</ID>
+    </color>
+    <color>
+      <code>201</code>
       <count>60455</count>
-    </colour>
-    <colour>
-      <ID>202</ID>
+    </color>
+    <color>
+      <code>202</code>
       <count>61892</count>
-    </colour>
-    <colour>
-      <ID>203</ID>
+    </color>
+    <color>
+      <code>203</code>
       <count>63880</count>
-    </colour>
-    <colour>
-      <ID>204</ID>
+    </color>
+    <color>
+      <code>204</code>
       <count>65545</count>
-    </colour>
-    <colour>
-      <ID>205</ID>
+    </color>
+    <color>
+      <code>205</code>
       <count>68099</count>
-    </colour>
-    <colour>
-      <ID>206</ID>
+    </color>
+    <color>
+      <code>206</code>
       <count>70853</count>
-    </colour>
-    <colour>
-      <ID>207</ID>
+    </color>
+    <color>
+      <code>207</code>
       <count>73263</count>
-    </colour>
-    <colour>
-      <ID>208</ID>
+    </color>
+    <color>
+      <code>208</code>
       <count>77179</count>
-    </colour>
-    <colour>
-      <ID>209</ID>
+    </color>
+    <color>
+      <code>209</code>
       <count>80080</count>
-    </colour>
-    <colour>
-      <ID>210</ID>
+    </color>
+    <color>
+      <code>210</code>
       <count>83202</count>
-    </colour>
-    <colour>
-      <ID>211</ID>
+    </color>
+    <color>
+      <code>211</code>
       <count>87167</count>
-    </colour>
-    <colour>
-      <ID>212</ID>
+    </color>
+    <color>
+      <code>212</code>
       <count>90806</count>
-    </colour>
-    <colour>
-      <ID>213</ID>
+    </color>
+    <color>
+      <code>213</code>
       <count>94379</count>
-    </colour>
-    <colour>
-      <ID>214</ID>
+    </color>
+    <color>
+      <code>214</code>
       <count>97730</count>
-    </colour>
-    <colour>
-      <ID>215</ID>
+    </color>
+    <color>
+      <code>215</code>
       <count>101682</count>
-    </colour>
-    <colour>
-      <ID>216</ID>
+    </color>
+    <color>
+      <code>216</code>
       <count>105430</count>
-    </colour>
-    <colour>
-      <ID>217</ID>
+    </color>
+    <color>
+      <code>217</code>
       <count>108204</count>
-    </colour>
-    <colour>
-      <ID>218</ID>
+    </color>
+    <color>
+      <code>218</code>
       <count>110723</count>
-    </colour>
-    <colour>
-      <ID>219</ID>
+    </color>
+    <color>
+      <code>219</code>
       <count>112999</count>
-    </colour>
-    <colour>
-      <ID>220</ID>
+    </color>
+    <color>
+      <code>220</code>
       <count>114665</count>
-    </colour>
-    <colour>
-      <ID>221</ID>
+    </color>
+    <color>
+      <code>221</code>
       <count>114530</count>
-    </colour>
-    <colour>
-      <ID>222</ID>
+    </color>
+    <color>
+      <code>222</code>
       <count>114436</count>
-    </colour>
-    <colour>
-      <ID>223</ID>
+    </color>
+    <color>
+      <code>223</code>
       <count>112632</count>
-    </colour>
-    <colour>
-      <ID>224</ID>
+    </color>
+    <color>
+      <code>224</code>
       <count>111248</count>
-    </colour>
-    <colour>
-      <ID>225</ID>
+    </color>
+    <color>
+      <code>225</code>
       <count>110189</count>
-    </colour>
-    <colour>
-      <ID>226</ID>
+    </color>
+    <color>
+      <code>226</code>
       <count>110941</count>
-    </colour>
-    <colour>
-      <ID>227</ID>
+    </color>
+    <color>
+      <code>227</code>
       <count>112422</count>
-    </colour>
-    <colour>
-      <ID>228</ID>
+    </color>
+    <color>
+      <code>228</code>
       <count>117391</count>
-    </colour>
-    <colour>
-      <ID>229</ID>
+    </color>
+    <color>
+      <code>229</code>
       <count>125852</count>
-    </colour>
-    <colour>
-      <ID>230</ID>
+    </color>
+    <color>
+      <code>230</code>
       <count>137392</count>
-    </colour>
-    <colour>
-      <ID>231</ID>
+    </color>
+    <color>
+      <code>231</code>
       <count>154366</count>
-    </colour>
-    <colour>
-      <ID>232</ID>
+    </color>
+    <color>
+      <code>232</code>
       <count>177146</count>
-    </colour>
-    <colour>
-      <ID>233</ID>
+    </color>
+    <color>
+      <code>233</code>
       <count>210015</count>
-    </colour>
-    <colour>
-      <ID>234</ID>
+    </color>
+    <color>
+      <code>234</code>
       <count>251836</count>
-    </colour>
-    <colour>
-      <ID>235</ID>
+    </color>
+    <color>
+      <code>235</code>
       <count>301160</count>
-    </colour>
-    <colour>
-      <ID>236</ID>
+    </color>
+    <color>
+      <code>236</code>
       <count>364557</count>
-    </colour>
-    <colour>
-      <ID>237</ID>
+    </color>
+    <color>
+      <code>237</code>
       <count>449481</count>
-    </colour>
-    <colour>
-      <ID>238</ID>
+    </color>
+    <color>
+      <code>238</code>
       <count>557429</count>
-    </colour>
-    <colour>
-      <ID>239</ID>
+    </color>
+    <color>
+      <code>239</code>
       <count>692275</count>
-    </colour>
-    <colour>
-      <ID>240</ID>
+    </color>
+    <color>
+      <code>240</code>
       <count>900980</count>
-    </colour>
-    <colour>
-      <ID>241</ID>
+    </color>
+    <color>
+      <code>241</code>
       <count>1176520</count>
-    </colour>
-    <colour>
-      <ID>242</ID>
+    </color>
+    <color>
+      <code>242</code>
       <count>1479790</count>
-    </colour>
-    <colour>
-      <ID>243</ID>
+    </color>
+    <color>
+      <code>243</code>
       <count>1794129</count>
-    </colour>
-    <colour>
-      <ID>244</ID>
+    </color>
+    <color>
+      <code>244</code>
       <count>2174465</count>
-    </colour>
-    <colour>
-      <ID>245</ID>
+    </color>
+    <color>
+      <code>245</code>
       <count>2505533</count>
-    </colour>
-    <colour>
-      <ID>246</ID>
+    </color>
+    <color>
+      <code>246</code>
       <count>2544286</count>
-    </colour>
-    <colour>
-      <ID>247</ID>
+    </color>
+    <color>
+      <code>247</code>
       <count>2122334</count>
-    </colour>
-    <colour>
-      <ID>248</ID>
+    </color>
+    <color>
+      <code>248</code>
       <count>1277166</count>
-    </colour>
-    <colour>
-      <ID>249</ID>
+    </color>
+    <color>
+      <code>249</code>
       <count>444093</count>
-    </colour>
-    <colour>
-      <ID>250</ID>
+    </color>
+    <color>
+      <code>250</code>
       <count>53732</count>
-    </colour>
-    <colour>
-      <ID>251</ID>
+    </color>
+    <color>
+      <code>251</code>
       <count>1746</count>
-    </colour>
-    <colour>
-      <ID>252</ID>
+    </color>
+    <color>
+      <code>252</code>
       <count>56</count>
-    </colour>
-    <colour>
-      <ID>253</ID>
+    </color>
+    <color>
+      <code>253</code>
       <count>3</count>
-    </colour>
-    <colour>
-      <ID>254</ID>
+    </color>
+    <color>
+      <code>254</code>
       <count>0</count>
-    </colour>
-  </colourData>
+    </color>
+  </colors>
 </histogram>
