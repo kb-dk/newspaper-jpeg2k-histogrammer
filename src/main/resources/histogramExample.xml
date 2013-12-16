@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<histogram>
+<histogram> <!--Namespace-->
   <colourScheme>
-    <colourSpace>
+    <colourSpace> <!--rgb GRAYSCALE-->
       Grayscale
     </colourSpace>
-    <colourDepth>
+    <colourDepth><!--integer?-->
       8 bits
     </colourDepth>
+
   </colourScheme>
 
-  <colourData>
+  <colourData><!--colours?-->
     <colour>
       <ID>0</ID>
       <count>3324</count>
