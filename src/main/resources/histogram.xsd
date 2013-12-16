@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="histogram" type="histogramType"/>
-  <xs:complexType name="colourSchemeType">
+  <xs:complexType name="colorSchemeType">
     <xs:sequence>
-      <xs:element type="xs:string" name="colourSpace"/>
-      <xs:element type="xs:string" name="colourDepth"/>
+      <xs:element type="xs:string" name="colorSpace"/>
+      <xs:element type="xs:string" name="colorDepth"/>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="colourType">
+  <xs:complexType name="colorType">
     <xs:sequence>
-      <xs:element type="xs:short" name="ID"/>
+      <xs:element type="xs:int" name="code"/>
       <xs:element type="xs:int" name="count"/>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="colourDataType">
+  <xs:complexType name="colorsType">
     <xs:sequence>
-      <xs:element type="colourType" name="colour" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="colorType" name="color" maxOccurs="unbounded" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="histogramType">
     <xs:sequence>
-      <xs:element type="colourSchemeType" name="colourScheme"/>
-      <xs:element type="colourDataType" name="colourData"/>
+      <xs:element type="colorSchemeType" name="colorScheme"/>
+      <xs:element type="colorsType" name="colors"/>
     </xs:sequence>
   </xs:complexType>
 </xs:schema>
