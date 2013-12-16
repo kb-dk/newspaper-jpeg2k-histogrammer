@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SCRIPT_DIR=$(dirname $(readlink -f $0))
+
+KAKADU_HOME=$SCRIPT_DIR/KDU722_Demo_Apps_for_Linux-x86-64_130410
+PATH=$PATH:$KAKADU_HOME
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$KAKADU_HOME
+
+export PATH
+export LD_LIBRARY_PATH
+
+$@

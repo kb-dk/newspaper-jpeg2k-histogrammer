@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class Historamer {
+public class Histogrammar {
 
    /* public static void main(String[] args) throws IOException {
         long start = System.currentTimeMillis();
@@ -18,10 +18,10 @@ public class Historamer {
 
     }
 */
-    public static long[] computeHistogramValues(File filename) throws IOException {
+    public static int[] computeHistogramValues(File filename) throws IOException {
         //Return image data from a raw PGM file as a numpy array, stripping the header information
 
-        long[] result = new long[256];
+        int[] result = new int[256];
         InputStream inputstream = getInputStream(filename);
         getHeader(inputstream);
 
