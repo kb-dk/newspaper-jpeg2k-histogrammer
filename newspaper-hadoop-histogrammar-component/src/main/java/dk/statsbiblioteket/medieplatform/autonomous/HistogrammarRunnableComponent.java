@@ -1,6 +1,6 @@
 package dk.statsbiblioteket.medieplatform.autonomous;
 
-import dk.statsbiblioteket.medieplatform.hadoop.JpylyzerJob;
+import dk.statsbiblioteket.medieplatform.hadoop.HistogrammarJob;
 import dk.statsbiblioteket.util.xml.XSLT;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataOutputStream;
@@ -47,7 +47,7 @@ public class HistogrammarRunnableComponent extends AbstractRunnableComponent {
      */
     @Override
     public String getEventID() {
-        return "JPylyzed";
+        return "Histogrammed";
     }
 
     @Override
@@ -109,7 +109,7 @@ public class HistogrammarRunnableComponent extends AbstractRunnableComponent {
                 new PrivilegedExceptionAction<ResultCollector>() {
                     public ResultCollector run() throws Exception {
 
-                        Tool job = new JpylyzerJob();
+                        Tool job = new HistogrammarJob();
                         job.setConf(conf);
                         try {
                             int result = ToolRunner.run(

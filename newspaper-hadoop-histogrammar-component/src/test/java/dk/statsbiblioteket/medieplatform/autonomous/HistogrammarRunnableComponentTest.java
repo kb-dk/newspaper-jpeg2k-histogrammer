@@ -11,7 +11,7 @@ import java.util.Properties;
 
 import static org.testng.Assert.assertTrue;
 
-public class SampleRunnableComponentTest {
+public class HistogrammarRunnableComponentTest {
 
 
     @Test(groups = "integrationTest")
@@ -23,12 +23,12 @@ public class SampleRunnableComponentTest {
         Batch batch = new Batch("400022028241");
 
         properties.setProperty(
-                ConfigConstants.JOB_FOLDER, "inputFiles-cibuild");
+                ConfigConstants.JOB_FOLDER, "inputFiles-histogrammar-cibuild");
         properties.setProperty(
                 ConfigConstants.PREFIX,
                 "/net/zone1.isilon.sblokalnet/ifs/archive/bitmag-devel01-data/cache/avisbits/perm/avis/");
         properties.setProperty(ConfigConstants.HADOOP_USER, "newspapr");
-        properties.setProperty(ConfigConstants.JPYLYZER_PATH, "/usr/lib/python2.7/site-packages/jpylyzer/jpylyzer.py");
+        properties.setProperty(ConfigConstants.KAKADU_PATH, "/usr/lib/python2.7/site-packages/jpylyzer/jpylyzer.py");
         properties.setProperty(ConfigConstants.FILES_PER_MAP_TASK, "5");
 
         clean(properties.getProperty(ConfigConstants.JOB_FOLDER));
