@@ -1,4 +1,4 @@
-package dk.statsbiblioteket.newspaper;
+package dk.statsbiblioteket.medieplatform.hadoop;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
@@ -7,19 +7,18 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Arrays;
 
 public class Historamer {
 
-    public static void main(String[] args) throws IOException {
+   /* public static void main(String[] args) throws IOException {
         long start = System.currentTimeMillis();
         long[] imagedata = read_pgm_img_data(new File(args[0]));
         System.out.println(Arrays.toString(imagedata));
         System.out.println(System.currentTimeMillis()-start);
 
     }
-
-    private static long[] read_pgm_img_data(File filename) throws IOException {
+*/
+    public static long[] computeHistogramValues(File filename) throws IOException {
         //Return image data from a raw PGM file as a numpy array, stripping the header information
 
         long[] result = new long[256];

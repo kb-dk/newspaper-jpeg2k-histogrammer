@@ -53,7 +53,7 @@ public class HistogrammarJob implements Tool {
         job.setJobName("Newspaper " + getClass().getSimpleName() + " " + configuration.get(ConfigConstants.BATCH_ID));
 
         job.setJarByClass(HistogrammarJob.class);
-        job.setMapperClass(KakaduConvertToPgmMapper.class);
+        job.setMapperClass(HistogrammerMapper.class);
         job.setReducerClass(DomsSaverReducer.class);
 
         job.setOutputKeyClass(Text.class);

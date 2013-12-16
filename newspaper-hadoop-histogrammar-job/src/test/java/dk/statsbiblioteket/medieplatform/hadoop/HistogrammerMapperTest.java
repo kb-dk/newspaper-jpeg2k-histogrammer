@@ -10,7 +10,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 
-public class KakaduConvertToPgmMapperTest {
+public class HistogrammerMapperTest {
 
 
     @BeforeClass
@@ -21,7 +21,7 @@ public class KakaduConvertToPgmMapperTest {
     @Test
     public void testSimplest() throws IOException {
         MapDriver<LongWritable, Text, Text, Text> mapDriver;
-        KakaduConvertToPgmMapper mapper = new KakaduConvertToPgmMapper();
+        HistogrammerMapper mapper = new HistogrammerMapper();
         mapDriver = MapDriver.newMapDriver(mapper);
         mapDriver.getConfiguration().set(dk.statsbiblioteket.medieplatform.autonomous.ConfigConstants.JPYLYZER_PATH, "echo");
 
@@ -34,7 +34,7 @@ public class KakaduConvertToPgmMapperTest {
     public void testMapper() throws IOException, URISyntaxException {
 
         MapDriver<LongWritable, Text, Text, Text> mapDriver;
-        KakaduConvertToPgmMapper mapper = new KakaduConvertToPgmMapper();
+        HistogrammerMapper mapper = new HistogrammerMapper();
         String name = "B400022028241-RT1/balloon.jp2";
         mapDriver = MapDriver.newMapDriver(mapper);
         File testFolder = new File(Thread.currentThread().getContextClassLoader().getResource(
@@ -46,9 +46,8 @@ public class KakaduConvertToPgmMapperTest {
         String testFile = getAbsolutePath(name);
         mapDriver.withInput(new LongWritable(1), new Text(testFile));
         mapDriver.withOutput(new Text(testFile), Utils.asText(
-                KakaduConvertToPgmMapper.jpylize(
-                        testFile,
-                        jpylyzerPath.getAbsolutePath())));
+                HistogrammerMapper.jpylize(
+                        testFile, jpylyzerPath.getAbsolutePath())));
         mapDriver.runTest();
     }
 

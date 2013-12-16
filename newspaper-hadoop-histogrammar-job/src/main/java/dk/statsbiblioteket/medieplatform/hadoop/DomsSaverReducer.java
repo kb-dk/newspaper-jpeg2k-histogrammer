@@ -86,16 +86,16 @@ public class DomsSaverReducer extends Reducer<Text, Text, Text, Text> {
                 if (!first) {
                     first = true;
                 } else {
-                    log.error("Found multiple jpylyzer results for file '" + translate + "'");
-                    throw new RuntimeException("Found multiple jpylyzer results for file '" + translate + "'");
+                    log.error("Found multiple histogram results for file '" + translate + "'");
+                    throw new RuntimeException("Found multiple histogram results for file '" + translate + "'");
                 }
                 log.info("Stored jpylyzer output for file '"+translate+"' in object '"+pid+"'");
                 fedora.modifyDatastreamByValue(
                         pid,
-                        "JPYLYZER",
+                        "HISTOGRAM",
                         value.toString(),
-                        Arrays.asList(translate + ".jpylyzer.xml"),
-                        "added Jpylyzer output from Hadoop");
+                        Arrays.asList(translate + ".histogram.xml"),
+                        "added histogram data from Hadoop");
                 context.write(key, new Text(pid));
             }
         } catch (BackendInvalidCredsException e) {

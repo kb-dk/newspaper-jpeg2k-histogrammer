@@ -34,7 +34,7 @@ public class HistogrammarJobTest {
             BackendInvalidResourceException, URISyntaxException {
         mapReduceDriver = new MapReduceDriver<LongWritable, Text, Text, Text, Text, Text>();
 
-        KakaduConvertToPgmMapper mapper = new KakaduConvertToPgmMapper();
+        HistogrammerMapper mapper = new HistogrammerMapper();
         File testFolder = new File(Thread.currentThread().getContextClassLoader().getResource(
                 "B400022028241-RT1/balloon.jp2").toURI()).getParentFile().getParentFile().getParentFile();
         File jpylyzerPath = new File(testFolder, "src/test/extras/jpylyzer-1.10.1/jpylyzer.py");
