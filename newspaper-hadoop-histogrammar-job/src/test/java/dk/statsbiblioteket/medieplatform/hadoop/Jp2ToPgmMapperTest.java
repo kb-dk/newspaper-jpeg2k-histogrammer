@@ -26,9 +26,10 @@ public class Jp2ToPgmMapperTest {
         Jp2ToPgmMapper mapper = new Jp2ToPgmMapper();
         mapDriver = MapDriver.newMapDriver(mapper);
         mapDriver.getConfiguration().set(ConfigConstants.KAKADU_PATH, "echo");
+        mapDriver.getConfiguration().set(ConfigConstants.BATCH_ID, "test");
 
         mapDriver.withInput(new LongWritable(1), new Text("ein"));
-        mapDriver.withOutput(new Text("ein"), new Text("ein"));
+        mapDriver.withOutput(new Text("ein"), new Text("/tmp/test/ein.pgm"));
         mapDriver.runTest();
     }
 

@@ -3,8 +3,10 @@ package dk.statsbiblioteket.medieplatform.hadoop;
 import dk.statsbiblioteket.medieplatform.autonomous.ConfigConstants;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.lib.chain.ChainMapper;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.NLineInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
@@ -22,6 +24,7 @@ import java.io.IOException;
  */
 public class HistogrammarJob implements Tool {
 
+    public static final String TEMP_FOLDER = "hadoop.pgm.temp.folder";
     private static Logger log = Logger.getLogger(HistogrammarJob.class);
     private Configuration conf;
 
@@ -44,23 +47,40 @@ public class HistogrammarJob implements Tool {
     @Override
     public int run(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
         Configuration configuration = getConf();
-        configuration.setIfUnset(ConfigConstants.KAKADU_PATH, "kakadu_run.sh kdu_expand -num_threads 1 -fprec 8M");
         configuration.setIfUnset(ConfigConstants.DOMS_URL, "http://achernar:7880/fedora");
         configuration.setIfUnset(ConfigConstants.DOMS_USERNAME, "fedoraAdmin");
         configuration.setIfUnset(ConfigConstants.DOMS_PASSWORD, "fedoraAdminPass");
+        configuration.setIfUnset(TEMP_FOLDER,"/tmp/");
 
         Job job = Job.getInstance(configuration);
         job.setJobName("Newspaper " + getClass().getSimpleName() + " " + configuration.get(ConfigConstants.BATCH_ID));
 
         job.setJarByClass(HistogrammarJob.class);
-        job.setMapperClass(HistogrammerMapper.class);
+        job.setMapperClass(ChainMapper.class);
         job.setReducerClass(DomsSaverReducer.class);
+
+        Configuration mapAConf = new Configuration(false);
+        ChainMapper.addMapper(
+                job,
+                Jp2ToPgmMapper.class,
+                LongWritable.class,
+                Text.class,
+                Text.class,
+                Text.class,
+                mapAConf);
+
+        Configuration mapBConf = new Configuration(false);
+        ChainMapper.addMapper(
+                job,
+                PgmToHistogramMapper.class,
+                Text.class,
+                Text.class,
+                Text.class,
+                Text.class,
+                mapBConf);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
-
-        job.setMapOutputKeyClass(Text.class);
-        job.setMapOutputValueClass(Text.class);
 
         job.setInputFormatClass(NLineInputFormat.class);
         int filesPerMapTask = configuration.getInt(ConfigConstants.FILES_PER_MAP_TASK, 1);

@@ -31,7 +31,7 @@ public class Jp2ToPgmMapper extends Mapper<LongWritable, Text, Text, Text> {
         super.setup(context);
         batchID = context.getConfiguration().get(ConfigConstants.BATCH_ID);
         commandPath = context.getConfiguration().get(ConfigConstants.KAKADU_PATH);
-        outputFolder = "/tmp/";
+        outputFolder = context.getConfiguration().get(HistogrammarJob.TEMP_FOLDER);
     }
 
     /**
@@ -47,11 +47,11 @@ public class Jp2ToPgmMapper extends Mapper<LongWritable, Text, Text, Text> {
     protected File convert(String dataPath) throws IOException {
 
 
-        File resultPath = getConvertedPath(dataPath, outputFolder);
+        File resultPath = getConvertedPath(dataPath);
         String[] commandLine = makeCommandLine(dataPath, commandPath, resultPath);
         ProcessRunner runner = new ProcessRunner(commandLine);
 
-        log.info("Running command '" + Arrays.deepToString(commandLine) + "'");
+        log.debug("Running command '" + Arrays.deepToString(commandLine) + "'");
         Map<String, String> myEnv = new HashMap<String, String>(System.getenv());
         runner.setEnviroment(myEnv);
         runner.setOutputCollectionByteSize(Integer.MAX_VALUE);
@@ -65,7 +65,6 @@ public class Jp2ToPgmMapper extends Mapper<LongWritable, Text, Text, Text> {
             String message
                     = "failed to run, returncode:" + runner.getReturnCode() + ", stdOut:" + runner.getProcessOutputAsString() + " stdErr:" + runner
                     .getProcessErrorAsString();
-            log.error(message);
             throw new IOException(message);
         }
     }
@@ -81,7 +80,7 @@ public class Jp2ToPgmMapper extends Mapper<LongWritable, Text, Text, Text> {
         return result.toArray(new String[result.size()]);
     }
 
-    private File getConvertedPath(String dataPath, String outputFolder) {
+    private File getConvertedPath(String dataPath) {
         File batchFolder = new File(outputFolder, batchID);
         batchFolder.mkdirs();
         return new File(batchFolder, new File(dataPath+".pgm").getName());
@@ -90,9 +89,11 @@ public class Jp2ToPgmMapper extends Mapper<LongWritable, Text, Text, Text> {
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         try {
+            log.debug("Mapping for '"+key+"' and '"+value+"'");
             File pgmPath = convert(value.toString());
             context.write(value, new Text(pgmPath.getAbsolutePath()));
         } catch (Exception e) {
+            log.error(e);
             throw new IOException(e);
         }
     }
