@@ -10,17 +10,8 @@ import java.io.InputStream;
 
 public class Histogrammar {
 
-   /* public static void main(String[] args) throws IOException {
-        long start = System.currentTimeMillis();
-        long[] imagedata = read_pgm_img_data(new File(args[0]));
-        System.out.println(Arrays.toString(imagedata));
-        System.out.println(System.currentTimeMillis()-start);
 
-    }
-*/
     public static int[] computeHistogramValues(File filename) throws IOException {
-        //Return image data from a raw PGM file as a numpy array, stripping the header information
-
         int[] result = new int[256];
         InputStream inputstream = getInputStream(filename);
         getHeader(inputstream);

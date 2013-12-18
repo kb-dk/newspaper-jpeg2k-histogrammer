@@ -30,7 +30,7 @@ public class HistogrammarComponent {
         RunnableComponent component = new HistogrammarRunnableComponent(properties);
 
         CallResult result = AutonomousComponentUtils.startAutonomousComponent(properties, component);
-        System.out.print(result);
+        log.info(result.toString());
         System.exit(result.containsFailures());
     }
 }

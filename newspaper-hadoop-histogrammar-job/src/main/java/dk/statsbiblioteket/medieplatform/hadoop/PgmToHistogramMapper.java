@@ -17,8 +17,8 @@ import java.io.StringWriter;
 import java.util.List;
 
 /**
- * Input is line-number, line text. The text is the path to a file to run jpylyzer on
- * Output is line text, jpylyzer output xml
+ *Input is jpeg2k path, pgm path.
+ * Output is jpeg2k path, histogram xml
  */
 public class PgmToHistogramMapper extends Mapper<Text, Text, Text, Text> {
 

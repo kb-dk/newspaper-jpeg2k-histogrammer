@@ -19,7 +19,7 @@ import java.io.IOException;
 
 
 /**
- * The jpylyzer job. Eats a text file containing paths to jpegs, runs jpylyzer on each and looks up the path in doms to
+ * The histogrammer job. Eats a text file containing paths to jpegs, runs kakadu (convert to pgm, and compute histogram) on each and looks up the path in doms to
  * store the result.
  */
 public class HistogrammarJob implements Tool {

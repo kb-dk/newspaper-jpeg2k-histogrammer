@@ -1,6 +1,6 @@
 <configuration scan="true">
 
-  <property name="LOGFILE" value="${user.home}/logs/hadoop-jpylyzer.log" />
+  <property name="LOGFILE" value="${user.home}/logs/hadoop-histogrammar.log" />
   <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
       <file>${LOGFILE}</file>
           <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">

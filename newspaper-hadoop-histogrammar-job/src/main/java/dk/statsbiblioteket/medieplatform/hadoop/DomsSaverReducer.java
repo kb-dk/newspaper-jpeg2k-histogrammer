@@ -29,6 +29,7 @@ public class DomsSaverReducer extends Reducer<Text, Text, Text, Text> {
     private static Logger log = Logger.getLogger(DomsSaverReducer.class);
     private EnhancedFedora fedora;
     private String batchID = null;
+    private String datastreamName;
 
     @Override
     protected void setup(Context context) throws IOException, InterruptedException {
@@ -36,6 +37,7 @@ public class DomsSaverReducer extends Reducer<Text, Text, Text, Text> {
         fedora = createFedoraClient(context);
         batchID = context.getConfiguration()
                          .get(ConfigConstants.BATCH_ID);
+        datastreamName = context.getConfiguration().get(ConfigConstants.BATCH_ID);
     }
 
     /**
@@ -66,7 +68,7 @@ public class DomsSaverReducer extends Reducer<Text, Text, Text, Text> {
      * Reduce (save result in doms)
      *
      * @param key the filename
-     * @param values the jpylyzer xml
+     * @param values the xml to store
      * @param context the task context
      *
      * @throws java.io.IOException Any checked exception that is not an InterruptedException
@@ -75,27 +77,27 @@ public class DomsSaverReducer extends Reducer<Text, Text, Text, Text> {
     @Override
     protected void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
         try {
-            log.debug("Reduce for file '" + key + "'");
+
             String pid = getDomsPid(key);
             log.debug("Found doms pid '" + pid + "' for key '" + key + "'");
             String translate = translate(key.toString());
-            log.debug("Translated filename '" + key + "'to '" + translate + "'");
+            log.trace("Translated filename '" + key + "'to '" + translate + "'");
 
             boolean first = false;
             for (Text value : values) {
                 if (!first) {
                     first = true;
                 } else {
-                    log.error("Found multiple histogram results for file '" + translate + "'");
-                    throw new RuntimeException("Found multiple histogram results for file '" + translate + "'");
+                    log.error("Found multiple results for file '" + translate + "'");
+                    throw new RuntimeException("Found multiple results for file '" + translate + "'");
                 }
-                log.info("Stored jpylyzer output for file '"+translate+"' in object '"+pid+"'");
+                log.debug("Stored output for file '"+translate+"' in object '"+pid+"'");
                 fedora.modifyDatastreamByValue(
                         pid,
-                        "HISTOGRAM",
+                        datastreamName,
                         value.toString(),
-                        Arrays.asList(translate + ".histogram.xml"),
-                        "added histogram data from Hadoop");
+                        Arrays.asList(translate + "."+datastreamName.toLowerCase()+".xml"),
+                        "added data from Hadoop");
                 context.write(key, new Text(pid));
             }
         } catch (BackendInvalidCredsException e) {
@@ -118,7 +120,6 @@ public class DomsSaverReducer extends Reducer<Text, Text, Text, Text> {
      * @param key the filename
      *
      * @return the doms pid
-     * @throws java.io.IOException
      */
     private String getDomsPid(Text key) throws BackendInvalidCredsException, BackendMethodFailedException {
 

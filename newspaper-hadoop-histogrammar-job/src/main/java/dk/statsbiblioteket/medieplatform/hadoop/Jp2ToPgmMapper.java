@@ -16,8 +16,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Input is line-number, line text. The text is the path to a file to run jpylyzer on
- * Output is line text, jpylyzer output xml
+ * Input is line-number, jpeg2k path.
+ * Output is jpeg2k path, pgm path
  */
 public class Jp2ToPgmMapper extends Mapper<LongWritable, Text, Text, Text> {
 

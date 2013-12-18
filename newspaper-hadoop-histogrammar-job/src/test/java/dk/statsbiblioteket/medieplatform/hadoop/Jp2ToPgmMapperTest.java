@@ -5,7 +5,6 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mrunit.mapreduce.MapDriver;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.io.File;
@@ -15,10 +14,7 @@ import java.net.URISyntaxException;
 public class Jp2ToPgmMapperTest {
 
 
-    @BeforeClass
-    public void setUp() {
-        //JpylyzerMapper mapper = new JpylyzerMapper("src/test/extras/jpylyzer-1.10.1/jpylyzer.py");
-    }
+
 
     @Test
     public void testSimplest() throws IOException {
