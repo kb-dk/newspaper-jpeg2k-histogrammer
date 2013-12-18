@@ -29,9 +29,13 @@ public class HistogrammarRunnableComponentTest {
                 ConfigConstants.PREFIX,
                 "/net/zone1.isilon.sblokalnet/ifs/archive/bitmag-devel01-data/cache/avisbits/perm/avis/");
         properties.setProperty(ConfigConstants.HADOOP_USER, "newspapr");
-        properties.setProperty(ConfigConstants.KAKADU_PATH, "kdu_expand -num_threads 1 -fprec 8M");
+        properties.setProperty(ConfigConstants.KAKADU_PATH, "kdu_expand -num_threads 4 -fprec 8M");
         properties.setProperty(ConfigConstants.FILES_PER_MAP_TASK, "5");
         properties.setProperty(HistogrammarJob.TEMP_FOLDER,"/tmp/");
+
+        /*Standard hadoop properties you can play with*/
+        properties.setProperty("mapreduce.map.speculative","false");
+        properties.setProperty("mapreduce.job.reduces","2");
 
         clean(properties.getProperty(ConfigConstants.JOB_FOLDER));
 
