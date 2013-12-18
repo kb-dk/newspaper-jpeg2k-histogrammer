@@ -1,7 +1,6 @@
 package dk.statsbiblioteket.medieplatform.hadoop;
 
 import dk.statsbiblioteket.medieplatform.autonomous.ConfigConstants;
-import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mrunit.mapreduce.MapDriver;
 import org.testng.Assert;
@@ -23,7 +22,7 @@ public class KakaduConverterMapperTest {
     @Test
     public void testRealConvert() throws IOException, URISyntaxException {
 
-        MapDriver<LongWritable, Text, Text, Text> mapDriver;
+        MapDriver<Text, Text, Text, Text> mapDriver;
         String batchID = "B400022028241-RT1";
 
         ConvertMapper mapper = new ConvertMapper();
@@ -37,14 +36,15 @@ public class KakaduConverterMapperTest {
         File testFolder = new File(Thread.currentThread().getContextClassLoader().getResource(
                 name).toURI()).getParentFile().getParentFile().getParentFile().getParentFile();
 
-        mapDriver.getConfiguration().set(ConfigConstants.HADOOP_CONVERTER_PATH, testFolder+"/src/test/extras/kakadu_run.sh kdu_expand -num_threads 1 -fprec 8M");
+        mapDriver.getConfiguration().set(ConvertMapper.HADOOP_CONVERTER_PATH, testFolder+"/src/test/extras/kakadu_run.sh kdu_expand -num_threads 1 -fprec 8M");
         mapDriver.getConfiguration().setIfUnset(ConfigConstants.BATCH_ID, batchID);
-        mapDriver.getConfiguration().set(ConfigConstants.HADOOP_TEMP_PATH,"/tmp/");
+        mapDriver.getConfiguration().set(ConvertMapper.HADOOP_CONVERTER_OUTPUT_PATH,"/tmp/");
+        mapDriver.getConfiguration().set(ConvertMapper.HADOOP_CONVERTER_OUTPUT_EXTENSION_PATH,".pgm");
 
 
 
         String testFile = getAbsolutePath(name);
-        mapDriver.withInput(new LongWritable(1), new Text(testFile));
+        mapDriver.withInput(new Text(testFile), new Text(testFile));
 
         mapDriver.withOutput(new Text(testFile), new Text(convertedFile));
         mapDriver.runTest();

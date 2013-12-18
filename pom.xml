@@ -39,7 +39,7 @@
             <dependency>
                 <groupId>dk.statsbiblioteket.sbutil</groupId>
                 <artifactId>sbutil-common</artifactId>
-                <version>0.5.13</version>
+                <version>0.5.14</version>
             </dependency>
 
 
@@ -47,7 +47,6 @@
                 <groupId>org.testng</groupId>
                 <artifactId>testng</artifactId>
                 <version>6.8.7</version>
-                <scope>test</scope>
             </dependency>
 
             <dependency>
@@ -55,13 +54,11 @@
                 <artifactId>mrunit</artifactId>
                 <version>1.0.0</version>
                 <classifier>hadoop2</classifier>
-                <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
                 <version>1.9.5</version>
-                <scope>test</scope>
             </dependency>
 
             <dependency>

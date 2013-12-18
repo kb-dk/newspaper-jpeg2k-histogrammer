@@ -19,7 +19,9 @@ import java.io.IOException;
 
 
 /**
- * The histogrammer job. Eats a text file containing paths to jpegs, runs kakadu (convert to pgm, and compute histogram) on each and looks up the path in doms to
+ * The histogrammer job. Eats a text file containing paths to jpegs, runs kakadu (convert to pgm, and compute
+ * histogram)
+ * on each and looks up the path in doms to
  * store the result.
  */
 public class HistogrammarJob implements Tool {
@@ -49,8 +51,9 @@ public class HistogrammarJob implements Tool {
         configuration.setIfUnset(ConfigConstants.DOMS_URL, "http://achernar:7880/fedora");
         configuration.setIfUnset(ConfigConstants.DOMS_USERNAME, "fedoraAdmin");
         configuration.setIfUnset(ConfigConstants.DOMS_PASSWORD, "fedoraAdminPass");
-        configuration.setIfUnset(ConfigConstants.HADOOP_TEMP_PATH,"/tmp/");
-        configuration.setIfUnset(ConfigConstants.HADOOP_SAVER_DATASTREAM,"HISTOGRAM");
+        configuration.setIfUnset(ConvertMapper.HADOOP_CONVERTER_OUTPUT_PATH, "/tmp/");
+        configuration.setIfUnset(ConvertMapper.HADOOP_CONVERTER_OUTPUT_EXTENSION_PATH, ".pgm");
+        configuration.setIfUnset(DomsSaverReducer.HADOOP_SAVER_DATASTREAM, "HISTOGRAM");
 
         Job job = Job.getInstance(configuration);
         job.setJobName("Newspaper " + getClass().getSimpleName() + " " + configuration.get(ConfigConstants.BATCH_ID));
@@ -59,25 +62,17 @@ public class HistogrammarJob implements Tool {
         job.setMapperClass(ChainMapper.class);
         job.setReducerClass(DomsSaverReducer.class);
 
+
+        ChainMapper.addMapper(
+                job, WrapperMapper.class, LongWritable.class, Text.class, Text.class, Text.class, new Configuration(false));
+
         Configuration mapAConf = new Configuration(false);
         ChainMapper.addMapper(
-                job,
-                ConvertMapper.class,
-                LongWritable.class,
-                Text.class,
-                Text.class,
-                Text.class,
-                mapAConf);
+                job, ConvertMapper.class, Text.class, Text.class, Text.class, Text.class, mapAConf);
 
         Configuration mapBConf = new Configuration(false);
         ChainMapper.addMapper(
-                job,
-                PgmToHistogramMapper.class,
-                Text.class,
-                Text.class,
-                Text.class,
-                Text.class,
-                mapBConf);
+                job, PgmToHistogramMapper.class, Text.class, Text.class, Text.class, Text.class, mapBConf);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
