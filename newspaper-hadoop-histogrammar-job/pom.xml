@@ -62,10 +62,7 @@
             <artifactId>hadoop-client</artifactId>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>commons-httpclient</groupId>
-            <artifactId>commons-httpclient</artifactId>
-        </dependency>
+
 
         <dependency>
             <groupId>dk.statsbiblioteket.sbutil</groupId>
@@ -73,7 +70,12 @@
         </dependency>
         <dependency>
             <groupId>dk.statsbiblioteket.newspaper</groupId>
-            <artifactId>hadoop-utils</artifactId>
+            <artifactId>hadoop-doms-integration</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>dk.statsbiblioteket.newspaper</groupId>
+            <artifactId>hadoop-file-converters</artifactId>
         </dependency>
 
         <dependency>

@@ -24,7 +24,6 @@ import java.io.IOException;
  */
 public class HistogrammarJob implements Tool {
 
-    public static final String TEMP_FOLDER = "hadoop.pgm.temp.folder";
     private static Logger log = Logger.getLogger(HistogrammarJob.class);
     private Configuration conf;
 
@@ -50,7 +49,7 @@ public class HistogrammarJob implements Tool {
         configuration.setIfUnset(ConfigConstants.DOMS_URL, "http://achernar:7880/fedora");
         configuration.setIfUnset(ConfigConstants.DOMS_USERNAME, "fedoraAdmin");
         configuration.setIfUnset(ConfigConstants.DOMS_PASSWORD, "fedoraAdminPass");
-        configuration.setIfUnset(TEMP_FOLDER,"/tmp/");
+        configuration.setIfUnset(ConfigConstants.HADOOP_TEMP_PATH,"/tmp/");
         configuration.setIfUnset(ConfigConstants.HADOOP_SAVER_DATASTREAM,"HISTOGRAM");
 
         Job job = Job.getInstance(configuration);
@@ -63,7 +62,7 @@ public class HistogrammarJob implements Tool {
         Configuration mapAConf = new Configuration(false);
         ChainMapper.addMapper(
                 job,
-                Jp2ToPgmMapper.class,
+                ConvertMapper.class,
                 LongWritable.class,
                 Text.class,
                 Text.class,

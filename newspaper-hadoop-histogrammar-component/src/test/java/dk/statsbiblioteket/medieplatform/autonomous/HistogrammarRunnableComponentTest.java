@@ -1,6 +1,5 @@
 package dk.statsbiblioteket.medieplatform.autonomous;
 
-import dk.statsbiblioteket.medieplatform.hadoop.HistogrammarJob;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
@@ -29,9 +28,9 @@ public class HistogrammarRunnableComponentTest {
                 ConfigConstants.PREFIX,
                 "/net/zone1.isilon.sblokalnet/ifs/archive/bitmag-devel01-data/cache/avisbits/perm/avis/");
         properties.setProperty(ConfigConstants.HADOOP_USER, "newspapr");
-        properties.setProperty(ConfigConstants.KAKADU_PATH, "kdu_expand -num_threads 4 -fprec 8M");
+        properties.setProperty(ConfigConstants.HADOOP_CONVERTER_PATH, "kdu_expand -num_threads 4 -fprec 8M");
         properties.setProperty(ConfigConstants.FILES_PER_MAP_TASK, "5");
-        properties.setProperty(HistogrammarJob.TEMP_FOLDER,"/tmp/");
+        properties.setProperty(ConfigConstants.HADOOP_TEMP_PATH,"/tmp/");
 
         /*Standard hadoop properties you can play with*/
         properties.setProperty("mapreduce.map.speculative","false");

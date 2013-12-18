@@ -42,16 +42,11 @@
                 <version>0.5.13</version>
             </dependency>
 
-            <dependency>
-                <groupId>commons-httpclient</groupId>
-                <artifactId>commons-httpclient</artifactId>
-                <version>3.1</version>
-            </dependency>
 
             <dependency>
                 <groupId>org.testng</groupId>
                 <artifactId>testng</artifactId>
-                <version>6.8</version>
+                <version>6.8.7</version>
                 <scope>test</scope>
             </dependency>
 
@@ -81,12 +76,18 @@
                 <version>1.4-SNAPSHOT</version>
             </dependency>
 
+            <dependency>
+                <groupId>dk.statsbiblioteket.newspaper</groupId>
+                <artifactId>hadoop-doms-integration</artifactId>
+                <version>1.4-SNAPSHOT</version>
+            </dependency>
 
             <dependency>
                 <groupId>dk.statsbiblioteket.newspaper</groupId>
-                <artifactId>hadoop-utils</artifactId>
+                <artifactId>hadoop-file-converters</artifactId>
                 <version>1.4-SNAPSHOT</version>
             </dependency>
+
 
             <dependency>
                 <groupId>ch.qos.logback</groupId>
