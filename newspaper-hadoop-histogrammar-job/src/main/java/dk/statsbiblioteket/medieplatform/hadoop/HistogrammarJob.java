@@ -51,6 +51,7 @@ public class HistogrammarJob implements Tool {
         configuration.setIfUnset(ConfigConstants.DOMS_USERNAME, "fedoraAdmin");
         configuration.setIfUnset(ConfigConstants.DOMS_PASSWORD, "fedoraAdminPass");
         configuration.setIfUnset(TEMP_FOLDER,"/tmp/");
+        configuration.setIfUnset(ConfigConstants.HADOOP_SAVER_DATASTREAM,"HISTOGRAM");
 
         Job job = Job.getInstance(configuration);
         job.setJobName("Newspaper " + getClass().getSimpleName() + " " + configuration.get(ConfigConstants.BATCH_ID));

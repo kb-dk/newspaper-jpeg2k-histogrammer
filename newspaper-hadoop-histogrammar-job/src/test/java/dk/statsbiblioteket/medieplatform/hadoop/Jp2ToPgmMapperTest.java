@@ -23,6 +23,7 @@ public class Jp2ToPgmMapperTest {
         mapDriver = MapDriver.newMapDriver(mapper);
         mapDriver.getConfiguration().set(ConfigConstants.KAKADU_PATH, "echo");
         mapDriver.getConfiguration().set(ConfigConstants.BATCH_ID, "test");
+        mapDriver.getConfiguration().set(HistogrammarJob.TEMP_FOLDER,"/tmp/");
 
         mapDriver.withInput(new LongWritable(1), new Text("ein"));
         mapDriver.withOutput(new Text("ein"), new Text("/tmp/test/ein.pgm"));
@@ -43,6 +44,8 @@ public class Jp2ToPgmMapperTest {
 
         mapDriver.getConfiguration().set(ConfigConstants.KAKADU_PATH, "echo");
         mapDriver.getConfiguration().setIfUnset(ConfigConstants.BATCH_ID, batchID);
+        mapDriver.getConfiguration().set(HistogrammarJob.TEMP_FOLDER,"/tmp/");
+
 
 
         String testFile = getAbsolutePath(name);
@@ -70,6 +73,8 @@ public class Jp2ToPgmMapperTest {
 
         mapDriver.getConfiguration().set(ConfigConstants.KAKADU_PATH, testFolder+"/src/test/extras/kakadu_run.sh kdu_expand -num_threads 1 -fprec 8M");
         mapDriver.getConfiguration().setIfUnset(ConfigConstants.BATCH_ID, batchID);
+        mapDriver.getConfiguration().set(HistogrammarJob.TEMP_FOLDER,"/tmp/");
+
 
 
         String testFile = getAbsolutePath(name);
