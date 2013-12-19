@@ -31,11 +31,11 @@ public class HistogrammarRunnableComponentTest {
         properties.setProperty(ConfigConstants.HADOOP_USER, "newspapr");
         properties.setProperty(ConvertMapper.HADOOP_CONVERTER_PATH, "kdu_expand -num_threads 4 -fprec 8M");
         properties.setProperty(ConfigConstants.FILES_PER_MAP_TASK, "5");
-        properties.setProperty(ConvertMapper.HADOOP_CONVERTER_OUTPUT_PATH,"/tmp/");
+        properties.setProperty(ConvertMapper.HADOOP_CONVERTER_OUTPUT_PATH, "/tmp/");
 
         /*Standard hadoop properties you can play with*/
-        properties.setProperty("mapreduce.map.speculative","false");
-        properties.setProperty("mapreduce.job.reduces","2");
+        properties.setProperty("mapreduce.map.speculative", "false");
+        properties.setProperty("mapreduce.job.reduces", "2");
 
         clean(properties.getProperty(ConfigConstants.JOB_FOLDER));
 

@@ -64,7 +64,13 @@ public class HistogrammarJob implements Tool {
 
 
         ChainMapper.addMapper(
-                job, WrapperMapper.class, LongWritable.class, Text.class, Text.class, Text.class, new Configuration(false));
+                job,
+                WrapperMapper.class,
+                LongWritable.class,
+                Text.class,
+                Text.class,
+                Text.class,
+                new Configuration(false));
 
         Configuration mapAConf = new Configuration(false);
         ChainMapper.addMapper(

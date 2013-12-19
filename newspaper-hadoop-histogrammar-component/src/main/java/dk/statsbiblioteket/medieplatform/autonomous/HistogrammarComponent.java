@@ -18,9 +18,7 @@ public class HistogrammarComponent {
      * @throws Exception
      * @see AutonomousComponentUtils#parseArgs(String[])
      */
-    public static void main(String[] args)
-            throws
-            Exception {
+    public static void main(String[] args) throws Exception {
         log.info("Starting with args {}", args);
 
         //Parse the args to a properties construct

@@ -17,7 +17,7 @@ import java.io.StringWriter;
 import java.util.List;
 
 /**
- *Input is jpeg2k path, pgm path.
+ * Input is jpeg2k path, pgm path.
  * Output is jpeg2k path, histogram xml
  */
 public class PgmToHistogramMapper extends Mapper<Text, Text, Text, Text> {
@@ -35,12 +35,12 @@ public class PgmToHistogramMapper extends Mapper<Text, Text, Text, Text> {
     @Override
     protected void map(Text key, Text value, Context context) throws IOException, InterruptedException {
         try {
-            log.debug("Mapping for '"+key+"' and '"+value+"'");
+            log.debug("Mapping for '" + key + "' and '" + value + "'");
             File pgmPath = new File(value.toString());
             String histogram = histogram(pgmPath);
             boolean deleted = pgmPath.delete();
-            if (! deleted){
-                log.warn("Failed to delete file '"+pgmPath+"', it will be left on the node");
+            if (!deleted) {
+                log.warn("Failed to delete file '" + pgmPath + "', it will be left on the node");
             }
             context.write(key, new Text(histogram));
         } catch (Exception e) {
@@ -83,12 +83,12 @@ public class PgmToHistogramMapper extends Mapper<Text, Text, Text, Text> {
      * @return the premis as xml
      */
     public String toXML(HistogramType histogram) throws Exception {
-            JAXBContext context = JAXBContext.newInstance(ObjectFactory.class);
-            Marshaller marshaller = context.createMarshaller();
-            marshaller.setProperty(Marshaller.JAXB_FRAGMENT, Boolean.TRUE);
-            StringWriter writer = new StringWriter();
-            marshaller.marshal(factory.createHistogram(histogram), writer);
-            return writer.toString();
+        JAXBContext context = JAXBContext.newInstance(ObjectFactory.class);
+        Marshaller marshaller = context.createMarshaller();
+        marshaller.setProperty(Marshaller.JAXB_FRAGMENT, Boolean.TRUE);
+        StringWriter writer = new StringWriter();
+        marshaller.marshal(factory.createHistogram(histogram), writer);
+        return writer.toString();
     }
 
 }

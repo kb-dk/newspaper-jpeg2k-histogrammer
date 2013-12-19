@@ -17,7 +17,7 @@ public class Histogrammar {
         getHeader(inputstream);
 
         int colour;
-        while ((colour = inputstream.read()) >= 0){
+        while ((colour = inputstream.read()) >= 0) {
             result[colour & 0xFF]++;
         }
         inputstream.close();
@@ -27,21 +27,22 @@ public class Histogrammar {
     private static InputStream getInputStream(File filename) throws FileNotFoundException {
         return new BufferedInputStream(new FileInputStream(filename));
     }
+
     private static byte[] getHeader(InputStream stream) throws IOException {
         int value;
         int blocksFound = 0;
         ByteArrayOutputStream header = new ByteArrayOutputStream();
         boolean isInWhiteSpace = false;
-        while ((value = stream.read()) >= 0){
+        while ((value = stream.read()) >= 0) {
 
-            if (Character.isWhitespace(value)){
-                if (!isInWhiteSpace){
+            if (Character.isWhitespace(value)) {
+                if (!isInWhiteSpace) {
                     isInWhiteSpace = true;
-                    blocksFound ++;
+                    blocksFound++;
                 }
             } else {
                 isInWhiteSpace = false;
-                if (blocksFound >= 4){
+                if (blocksFound >= 4) {
                     break;
                 }
             }

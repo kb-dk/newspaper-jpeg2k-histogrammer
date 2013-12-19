@@ -13,12 +13,6 @@ import java.net.URISyntaxException;
 public class KakaduConverterMapperTest {
 
 
-
-
-
-
-
-
     @Test
     public void testRealConvert() throws IOException, URISyntaxException {
 
@@ -33,14 +27,17 @@ public class KakaduConverterMapperTest {
 
         mapDriver = MapDriver.newMapDriver(mapper);
 
-        File testFolder = new File(Thread.currentThread().getContextClassLoader().getResource(
-                name).toURI()).getParentFile().getParentFile().getParentFile().getParentFile();
+        File testFolder = new File(
+                Thread.currentThread().getContextClassLoader().getResource(
+                        name).toURI()).getParentFile().getParentFile().getParentFile().getParentFile();
 
-        mapDriver.getConfiguration().set(ConvertMapper.HADOOP_CONVERTER_PATH, testFolder+"/src/test/extras/kakadu_run.sh kdu_expand -num_threads 1 -fprec 8M");
+        mapDriver.getConfiguration()
+                 .set(
+                         ConvertMapper.HADOOP_CONVERTER_PATH,
+                         testFolder + "/src/test/extras/kakadu_run.sh kdu_expand -num_threads 1 -fprec 8M");
         mapDriver.getConfiguration().setIfUnset(ConfigConstants.BATCH_ID, batchID);
-        mapDriver.getConfiguration().set(ConvertMapper.HADOOP_CONVERTER_OUTPUT_PATH,"/tmp/");
-        mapDriver.getConfiguration().set(ConvertMapper.HADOOP_CONVERTER_OUTPUT_EXTENSION_PATH,".pgm");
-
+        mapDriver.getConfiguration().set(ConvertMapper.HADOOP_CONVERTER_OUTPUT_PATH, "/tmp/");
+        mapDriver.getConfiguration().set(ConvertMapper.HADOOP_CONVERTER_OUTPUT_EXTENSION_PATH, ".pgm");
 
 
         String testFile = getAbsolutePath(name);
@@ -56,8 +53,9 @@ public class KakaduConverterMapperTest {
 
 
     private String getAbsolutePath(String name) throws URISyntaxException {
-        return new File(Thread.currentThread().getContextClassLoader().getResource(
-                name).toURI()).getAbsolutePath();
+        return new File(
+                Thread.currentThread().getContextClassLoader().getResource(
+                        name).toURI()).getAbsolutePath();
     }
 
 }
