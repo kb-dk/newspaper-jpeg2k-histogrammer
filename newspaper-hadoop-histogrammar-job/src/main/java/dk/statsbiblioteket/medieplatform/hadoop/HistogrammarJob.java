@@ -91,6 +91,7 @@ public class HistogrammarJob implements Tool {
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
+        job.setSpeculativeExecution(false);
 
         boolean result = job.waitForCompletion(true);
         log.info(job);
