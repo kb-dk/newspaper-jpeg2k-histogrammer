@@ -13,7 +13,7 @@ import java.net.URISyntaxException;
 public class KakaduConverterMapperTest {
 
 
-    @Test
+    @Test(enabled = false)
     public void testRealConvert() throws IOException, URISyntaxException {
 
         MapDriver<Text, Text, Text, Text> mapDriver;
