@@ -9,7 +9,7 @@
 
     <groupId>dk.statsbiblioteket.medieplatform.hadoop</groupId>
     <artifactId>newspaper-histogrammar</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
         <module>newspaper-hadoop-histogrammar-job</module>
@@ -129,7 +129,7 @@
         <connection>scm:git:git@github.com:statsbiblioteket/newspaper-jpeg2k-histogrammer.git</connection>
         <developerConnection>scm:git:git@github.com:statsbiblioteket/newspaper-jpeg2k-histogrammer.git
         </developerConnection>
-      <tag>newspaper-histogrammar-1.0</tag>
+      <tag>HEAD</tag>
   </scm>
 
 </project>
