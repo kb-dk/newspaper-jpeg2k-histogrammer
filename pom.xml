@@ -127,6 +127,10 @@
             </plugin>
         </plugins>
     </build>
-
+    <scm>
+        <connection>scm:git:git@github.com:statsbiblioteket/newspaper-jpeg2k-histogrammer.git</connection>
+        <developerConnection>scm:git:git@github.com:statsbiblioteket/newspaper-jpeg2k-histogrammer.git
+        </developerConnection>
+    </scm>
 
 </project>
