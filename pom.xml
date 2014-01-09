@@ -128,5 +128,9 @@
         </plugins>
     </build>
 
+    <scm>
+        <developerConnection>scm:git:git@github.com:statsbiblioteket/newspaper-jpeg2k-histogrammer.git
+        </developerConnection>
+    </scm>
 
 </project>
