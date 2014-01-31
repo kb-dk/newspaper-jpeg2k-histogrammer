@@ -1,3 +1,6 @@
+1.1.1
+*Update newspaper-batch-event-framework to 1.4.3 for better logging and fault discovery
+
 1.1
 * Update newspaper-batch-event-framework to 1.4.2 for a quiet component
 
