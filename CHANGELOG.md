@@ -1,5 +1,8 @@
+1.1.2
+* Updated framework dependency to 1.4.5 to enable maxResults
+
 1.1.1
-*Update newspaper-batch-event-framework to 1.4.3 for better logging and fault discovery
+* Update newspaper-batch-event-framework to 1.4.3 for better logging and fault discovery
 
 1.1
 * Update newspaper-batch-event-framework to 1.4.2 for a quiet component
