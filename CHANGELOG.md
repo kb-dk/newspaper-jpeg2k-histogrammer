@@ -1,5 +1,6 @@
-1.1.3
-* Updated to newspaper-parent 1.1
+1.2
+* Updated to newspaper-parent 1.2
+* Updated to version 1.6 of batch event framework
 
 1.1.2
 * Updated framework dependency to 1.4.5 to enable maxResults
