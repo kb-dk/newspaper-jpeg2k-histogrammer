@@ -1,3 +1,7 @@
+1.3
+* Changed hadoop dependencies to Cloudera based 2.0.0-cdh4.5.0 
+* Update to version 1.7 of batch event framework
+
 1.2
 * Updated to newspaper-parent 1.2
 * Updated to version 1.6 of batch event framework
