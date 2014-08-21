@@ -18,10 +18,14 @@ public class Histogrammar {
 
         int colour;
         while ((colour = inputstream.read()) >= 0) {
-            result[colour & 0xFF]++;
+            result[toUnsigned(colour)]++;
         }
         inputstream.close();
         return result;
+    }
+
+    protected static int toUnsigned(int colour) {
+        return colour & 0xFF;
     }
 
     private static InputStream getInputStream(File filename) throws FileNotFoundException {
