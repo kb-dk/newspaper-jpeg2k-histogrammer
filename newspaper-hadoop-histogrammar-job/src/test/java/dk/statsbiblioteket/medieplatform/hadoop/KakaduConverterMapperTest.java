@@ -20,7 +20,7 @@ public class KakaduConverterMapperTest {
         String batchID = "B400022028241-RT1";
 
         ConvertMapper mapper = new ConvertMapper();
-        String name = "B400022028241-RT1/morgenavisenjyllandsposten-2002-01-26-01-0227B.jp2";
+        String name = "B400022028241-RT1/balloon.jp2";
         String convertedFile = "/tmp/" + name + ".pgm";
         File resultFile = new File(convertedFile);
         resultFile.delete();
