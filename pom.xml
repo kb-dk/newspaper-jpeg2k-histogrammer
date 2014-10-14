@@ -20,7 +20,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <autonoumous.component.framework.version>1.11-SNAPSHOT</autonoumous.component.framework.version>
+        <autonoumous.component.framework.version>1.12-SNAPSHOT</autonoumous.component.framework.version>
     </properties>
 
     <modules>
@@ -73,7 +73,7 @@
 
             <dependency>
                 <groupId>dk.statsbiblioteket.newspaper</groupId>
-                <artifactId>autonomous-component</artifactId>
+                <artifactId>newspaper-batch-event-framework-common</artifactId>
                 <version>${autonoumous.component.framework.version}</version>
             </dependency>
 

@@ -16,7 +16,7 @@ public class HistogrammarRunnableComponentTest {
 
 
     @Test(groups = "integrationTest")
-    public void testDoWorkOnBatch() throws Exception {
+    public void testdoWorkOnItem() throws Exception {
         String pathToProperties = System.getProperty("integration.test.newspaper.properties");
         Properties properties = new Properties();
         properties.load(new FileInputStream(pathToProperties));
@@ -42,7 +42,7 @@ public class HistogrammarRunnableComponentTest {
         HistogrammarRunnableComponent component = new HistogrammarRunnableComponent(properties);
         ResultCollector resultCollector = new ResultCollector("crap", "crap");
 
-        component.doWorkOnBatch(batch, resultCollector);
+        component.doWorkOnItem(batch, resultCollector);
         assertTrue(resultCollector.isSuccess(), resultCollector.toReport());
     }
 
