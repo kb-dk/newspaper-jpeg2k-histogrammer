@@ -71,11 +71,6 @@
                 <version>1.9.5</version>
             </dependency>
 
-            <dependency>
-                <groupId>dk.statsbiblioteket.newspaper</groupId>
-                <artifactId>newspaper-batch-event-framework-common</artifactId>
-                <version>${autonoumous.component.framework.version}</version>
-            </dependency>
 
             <dependency>
                 <groupId>dk.statsbiblioteket.newspaper</groupId>
