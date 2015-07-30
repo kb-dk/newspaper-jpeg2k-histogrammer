@@ -8,7 +8,7 @@
     </parent>
 
     <groupId>dk.statsbiblioteket.medieplatform.hadoop</groupId>
-    <artifactId>newspaper-histogrammar</artifactId>
+    <artifactId>newspaper-jpeg2k-histogrammer</artifactId>
     <version>1.6-SNAPSHOT</version>
     <repositories>
         <repository>

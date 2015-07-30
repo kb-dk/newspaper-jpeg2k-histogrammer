@@ -4,11 +4,11 @@
 
     <parent>
         <groupId>dk.statsbiblioteket.medieplatform.hadoop</groupId>
-        <artifactId>newspaper-histogrammar</artifactId>
+        <artifactId>newspaper-jpeg2k-histogrammer</artifactId>
         <version>1.6-SNAPSHOT</version>
     </parent>
 
-    <artifactId>newspaper-hadoop-histogrammar-component</artifactId>
+    <artifactId>newspaper-jpeg2k-histogrammer-component</artifactId>
 
     <build>
         <plugins>
@@ -83,7 +83,7 @@
 
         <dependency>
             <groupId>dk.statsbiblioteket.medieplatform.hadoop</groupId>
-            <artifactId>newspaper-hadoop-histogrammar-job</artifactId>
+            <artifactId>newspaper-jpeg2k-histogrammer-job</artifactId>
             <version>${project.version}</version>
             <classifier>jar-with-dependencies</classifier>
         </dependency>
