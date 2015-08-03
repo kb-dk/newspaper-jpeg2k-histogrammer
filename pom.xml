@@ -24,8 +24,8 @@
     </properties>
 
     <modules>
-        <module>newspaper-hadoop-histogrammar-job</module>
-        <module>newspaper-hadoop-histogrammar-component</module>
+        <module>newspaper-jpeg2k-histogrammer-job</module>
+        <module>newspaper-jpeg2k-histogrammer-component</module>
     </modules>
 
 
