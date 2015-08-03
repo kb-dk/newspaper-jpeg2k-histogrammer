@@ -20,7 +20,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <autonoumous.component.framework.version>2.9-SNAPSHOT</autonoumous.component.framework.version>
+        <autonoumous.component.framework.version>2.10-SNAPSHOT</autonoumous.component.framework.version>
     </properties>
 
     <modules>
