@@ -4,7 +4,7 @@
     <parent>
         <groupId>dk.statsbiblioteket.newspaper</groupId>
         <artifactId>newspaper-parent</artifactId>
-        <version>1.2</version>
+        <version>1.3-SNAPSHOT</version>
     </parent>
 
     <groupId>dk.statsbiblioteket.medieplatform.hadoop</groupId>
@@ -21,6 +21,8 @@
 
     <properties>
         <autonoumous.component.framework.version>2.10-SNAPSHOT</autonoumous.component.framework.version>
+        <surefire.forkCount>1C</surefire.forkCount>
+        <failsafe.forkCount>1C</failsafe.forkCount>
     </properties>
 
     <modules>
